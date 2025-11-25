@@ -6,7 +6,7 @@ copy *.js .
 run npm install
 env mongo="true" \
     redis_url="redis://redis:6379" \
-    mongo_url="mongodb://mongodb:27017/user"
+    mongo_url="mongodb://mongodb:27017/users"
 cmd ["node","server.js"]
 
 
