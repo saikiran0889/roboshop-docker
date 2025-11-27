@@ -2,7 +2,7 @@ from maven:3.9.11
 expose 8080
 workdir /opt/server
 copy pom.xml .
-copy src .
+copy src ./src
 run mvn clean package
 run mv target/shipping-1.0.jar shipping.jar
 env cart_endpoint="cart:8080" \
