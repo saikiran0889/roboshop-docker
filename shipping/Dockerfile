@@ -5,6 +5,6 @@ copy pom.xml .
 copy src ./src
 run mvn clean package 
 run mv target/shipping-1.0.jar shipping.jar
-env cart_endpoint="cart:8080" \
-    db_host="mysql"
+env CART_ENDPOINT="cart:8080" \
+    DB_HOST="mysql"
 cmd ["java","-jar","shipping.jar"]
