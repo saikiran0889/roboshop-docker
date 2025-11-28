@@ -34,7 +34,7 @@ services:
   shipping:
     image: shipping:v1
     container_name: shipping
-    depebds_on:
+    depends_on:
     - mysql
     - cart
   payment:
