@@ -4,5 +4,5 @@ services:
 networks:
   default:
     driver: bridge
-  name: roboshop
-  external: false # true indicates if you created network manually using docker network command
+    name: roboshop
+    external: false # true indicates if you created network manually using docker network command
